@@ -37,7 +37,7 @@ let shoppingArr = [
 
 let socialArr = [
    {  type:"location",
-      icon:<FaMapMarkerAlt/>,
+      icon:<FaMapMarkerAlt size={25}/>,
      value:" G6C3+3G4, Kunjanagar Rd, Subhashpally, Falakata, West Bengal 735211"
    },
    {
@@ -103,7 +103,7 @@ function Footer() {
                <Stack align={"flex-start"}>
                   <ListHeader>Contact Us</ListHeader>
                   {socialArr.map((item) => (
-                     <ListItem key={item} alignItems={item.type==="location"?"items-start":"center"}>
+                     <ListItem key={item}>
                  
               {item.icon}
 

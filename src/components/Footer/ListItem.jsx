@@ -1,10 +1,10 @@
 import { Flex, Text } from "@chakra-ui/react";
 
-function ListItem({ children,alignItems}) {
+function ListItem({ children}) {
    return (
       <Text
          display="flex"
-         alignItems={alignItems} 
+         alignItems="center"
          gap={2} 
          fontSize={"sm"}
          letterSpacing={0.4}
