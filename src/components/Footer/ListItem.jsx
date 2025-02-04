@@ -1,8 +1,11 @@
-import { Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
-function ListItem({ children }) {
+function ListItem({ children,alignItems}) {
    return (
       <Text
+         display="flex"
+         alignItems={alignItems} 
+         gap={2} 
          fontSize={"sm"}
          letterSpacing={0.4}
          _hover={{

@@ -18,35 +18,37 @@ import Medimed from "../../assets/logos/Medimed.com-navbar.png";
 import Medimed_logo from "../../assets/logos/Medimed.com-logo-removebg.png";
 import ListHeader from "./ListHeader";
 import ListItem from "./ListItem";
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 let companyArr = [
-   "About Medimed",
-   "Customers Speak",
-   "In the News",
-   "Career",
-   "Terms and Conditions",
-   "Privacy Policy",
-   "Fees and Payments Policy",
-   "Shipping and Delivery Policy",
-   "Return, Refund and Cancellation Policy",
-   "Contact",
+   "About us",
+   "Services",
+   "Testimonials",
+   "Contact"
 ];
 
 let shoppingArr = [
-   "Browse by A-Z",
-   "Browse by Manufacturers",
-   "Health Articles",
-   "Offers / Coupons",
-   "FAQs",
+   "Dental implants",
+   "Dentures",
+   "Cosmetic Dentistry",
+    "Oral Hygiene",
+    "Dental Surgery"
 ];
 
 let socialArr = [
-   "Patients Alike",
-   "Facebook",
-   "Twitter",
-   "LinkedIn",
-   "Youtube",
-   "Refer & Earn",
+   {  type:"location",
+      icon:<FaMapMarkerAlt/>,
+     value:" G6C3+3G4, Kunjanagar Rd, Subhashpally, Falakata, West Bengal 735211"
+   },
+   {
+      icon:<FaPhoneAlt/>,
+    value:"080167 17777"
+   }
+    ,
+   {
+      icon:<FaEnvelope/>, 
+      value:"niveditamedical@official.com"
+   }
 ];
 
 function Footer() {
@@ -93,48 +95,35 @@ function Footer() {
                   ))}
                </Stack>
                <Stack align={"flex-start"}>
-                  <ListHeader>Shopping</ListHeader>
+                  <ListHeader>Our Services</ListHeader>
                   {shoppingArr.map((item) => (
                      <ListItem key={item}>{item}</ListItem>
                   ))}
                </Stack>
                <Stack align={"flex-start"}>
-                  <ListHeader>Social</ListHeader>
+                  <ListHeader>Contact Us</ListHeader>
                   {socialArr.map((item) => (
-                     <ListItem key={item}>{item}</ListItem>
+                     <ListItem key={item} alignItems={item.type==="location"?"items-start":"center"}>
+                 
+              {item.icon}
+
+               {item.value}</ListItem>
                   ))}
                </Stack>
                <Stack align={"flex-start"}>
-                  <ListHeader>Subscribe to our Newsletter</ListHeader>
+                  <ListHeader>Find US</ListHeader>
                   <ListItem>
-                     Get a free subscription to our health and fitness tip and
-                     stay tuned to our latest offers
+                  <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.0040884163004!2d89.20129347542598!3d26.519992976883465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e3a42c2be5b2eb%3A0x7cd882618c26c02b!2sNIVEDITA%20MEDICAL!5e0!3m2!1sen!2sin!4v1738570667058!5m2!1sen!2sin"
+                  width="300"
+                  height="150"
+                  style={{ border: 0 }} // ✅ Correct way to write styles in React
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+               />
                   </ListItem>
-                  <InputGroup
-                     w={"91%"}
-                     border={"none"}
-                     borderRadius={0}
-                     borderBottom={"1.5px solid"}
-                     borderColor={"blackAlpha.200"}
-                  >
-                     <Input
-                        type="email"
-                        placeholder="Enter your email address"
-                        px={2}
-                        fontSize={"sm"}
-                        border={"none"}
-                        focusBorderColor={"none"}
-                        color={"blackAlpha.700"}
-                        _placeholder={{ color: "blackAlpha.500" }}
-                     />
-                     <InputRightAddon
-                        children={<BsArrowRight color={"teal"} />}
-                        bg={"white"}
-                        border={"none"}
-                        px={2}
-                        cursor={"pointer"}
-                     />
-                  </InputGroup>
+                  
                </Stack>
             </SimpleGrid>
          </Container>
