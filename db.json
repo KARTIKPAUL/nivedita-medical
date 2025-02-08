@@ -1,6 +1,5 @@
 {
   "categoryArr": [
-    "COVID Essentials",
     "Diabetes",
     "Eyewear",
     "Ayush",
@@ -9,7 +8,6 @@
     "Fitness",
     "Mom & Baby",
     "Devices",
-    "Surgical",
     "Sexual Wellness",
     "Treatments"
   ],
@@ -19,12 +17,6 @@
       "img": "https://user-images.githubusercontent.com/40628582/208020111-380f1d12-3c48-407a-bdf1-4aa90f8d9f8a.svg",
       "heading": "Order Medicine",
       "deal": "Save Upto 25% off"
-    },
-    {
-      "id": 2,
-      "img": "https://user-images.githubusercontent.com/40628582/208020169-93b311d8-6648-4149-bdee-3d45e0aa0d02.svg",
-      "heading": "Beauty",
-      "deal": "Save Upto 40% off"
     },
     {
       "id": 3,
