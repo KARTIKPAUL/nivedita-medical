@@ -162,7 +162,7 @@ function Footer() {
                justify={"space-between"}
             >
                <Text fontSize={"sm"} textAlign={"center"}>
-                  Copyright© 2022. All Rights Reserved
+                  Copyright© 2025. All Rights Reserved
                </Text>
                <Flex>
                   <FaFacebook

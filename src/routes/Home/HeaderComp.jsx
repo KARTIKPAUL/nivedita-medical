@@ -30,9 +30,7 @@ function HeaderComp() {
             <Image src={diagnostics_logo} boxSize={{ md: 30, lg: 39 }} />
             <Text>Lab Tests</Text>
          </HStack>
-         <DropDown data={beautyPopoverArr} imgUrl="beauty">
-            Beauty
-         </DropDown>
+      
          <DropDown data={healthPopoverArr} imgUrl="health">
             Health Corner
          </DropDown>
